@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Day - HTML Bootstrap Template</title>
+    <title>Demco</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<link href="css/animate.min.css" rel="stylesheet"> 
 	<link href="css/style.css" rel="stylesheet" />	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,8 +32,8 @@
                         <span class="icon-bar"></span>
                     </button>
                    <div class="navbar-brand">
-						<a href="index.html">
-							<img src="../img/logos/imagologo-demco.png" height="150" width="120" class="img-responsive" alt=""> 
+                       <a href="index.html">
+							<img src="img/logos/imagologo-demco.png" height="150" width="120" class="img-responsive" alt=""> 
 						</a>
 					</div>
                 </div>				
@@ -54,48 +54,43 @@
         </nav><!--/nav-->		
     </header><!--/header-->	
 	<div class="map">
-		<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Kuningan,+Jakarta+Capital+Region,+Indonesia&amp;aq=3&amp;oq=kuningan+&amp;sll=37.0625,-95.677068&amp;sspn=37.410045,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=Kuningan&amp;t=m&amp;z=14&amp;ll=-6.238824,106.830177&amp;output=embed">
-		</iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9668242823473!2d-99.13292168560847!3d19.413839346312077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fec3b9804937%3A0xf09caea2cd7080b6!2sAntonio+Garc%C3%ADa+Cubas+246%2C+Tr%C3%A1nsito%2C+06820+Ciudad+de+M%C3%A9xico%2C+D.F.!5e0!3m2!1ses!2smx!4v1455762966709">
+        </iframe>
 	</div>
 	
 	<section class="contact-page">
         <div class="container">
             <div class="text-center">        
-                <h2>Drop Your Message</h2>
-                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h2>Contacto</h2>
             </div> 
             <div class="row contact-wrap"> 
                 <div class="status alert alert-success" style="display: none"></div>
-                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="http://www.demco.com.mx/send_form_email.php">
                     <div class="col-sm-5 col-sm-offset-1">
                         <div class="form-group">
-                            <label>Name *</label>
-                            <input type="text" name="name" class="form-control" required="required">
+                            <label>Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" required="required">
                         </div>
                         <div class="form-group">
-                            <label>Email *</label>
-                            <input type="email" name="email" class="form-control" required="required">
+                            <label>Correo *</label>
+                            <input type="text" id="email" name="email" class="form-control" required="required">
                         </div>
                         <div class="form-group">
-                            <label>Phone</label>
-                            <input type="number" class="form-control">
+                            <label>Teléfono</label>
+                            <input type="text" name="telefono" id="telefono" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>Company Name</label>
-                            <input type="text" class="form-control">
+                            <label>Nombre de la compañía</label>
+                            <input type="text" id="compania" name="compania" class="form-control">
                         </div>                        
                     </div>
                     <div class="col-sm-5">
                         <div class="form-group">
-                            <label>Subject *</label>
-                            <input type="text" name="subject" class="form-control" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label>Message *</label>
-                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+                            <label>Mensaje *</label>
+                            <textarea id="comentario" name="comentario" required="required" class="form-control" rows="8"></textarea>
                         </div>                        
                         <div class="form-group">
-                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit message</button>
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Envia tu mensaje</button>
                         </div>
                     </div>
                 </form> 
@@ -106,27 +101,37 @@
 	
 	<footer>
 		<div class="container">
-			<div class="col-md-5 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="col-md-5 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 				<h4>Nosotros</h4>
 				<p>DESECHABLES EN MÉDICA Y COSMÉTICA S.A. DE C.V</p>						
 				<div class="contact-info">
 					<ul>
 						<li><i class="fa fa-home fa"></i>Antonio García Cubas 246, Tránsito, 06820 Ciudad de México</li>
-						<li><i class="fa fa-phone fa"></i> 57-40-50-22</li>
-						<li><i class="fa fa-phone fa"></i> 46-17-45-29</li>
+						<li><i class="fa fa-phone fa"></i><i style="margin-left:5px;margin-right:5px" class="fa fa-whatsapp fa"></i>57-40-50-22</p></li>
+						<li><i class="fa fa-phone fa"></i><i style="margin-left:5px;margin-right:5px" class="fa fa-whatsapp fa"></i>46-17-45-29</li>
 						<li><i class="fa fa-envelope fa"></i> contacto@demco.com.mx</li>
+						<li><a class="contact-info" href="privateterms.html">Aviso de privacidad</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-md-5 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-				<h4>Nota</h4>
+				<h4 style="margin-top:30px !important">Nota</h4>
 				<div class="contact-info">
-						
 					<ul>
 						<li>Somos fabricantes de la línea desechable.</li>
 						<li>Manejamos la linea de tela para el IMSS.</li>
 					</ul>
 				</div>
+			</div>
+			<div class="col-md-5 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+					<h4 style="margin-top:30px !important">Catálogo</h4>
+					<div class="contact-info">
+						<ul>
+							<li><a style="color:#fff" href="resources/catalogo.pdf" download>
+								<i class="fa fa-file-pdf-o"></i> Descargar
+							</li>
+						</ul>
+					</div>
 			</div>
 		</div>	
 	</footer>
